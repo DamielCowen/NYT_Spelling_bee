@@ -4,5 +4,5 @@ Beat the New York Time's daily [Spelling Bee game](https://www.nytimes.com/puzzl
 
 Its as easy as 1,2,3!
 1. Clone the repo
-2. enter the characters and center character 
-3. run file and win!
+2. Bee = Pro()
+3. Pro.answers
