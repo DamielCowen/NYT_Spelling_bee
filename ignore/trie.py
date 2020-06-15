@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jun 12 12:24:38 2020
-
-@author: drahcir1
-"""
-
-
 class TrieNode:
 
     def __init__(self, character):
@@ -22,7 +13,6 @@ class TrieNode:
 class Trie:
 
     def __init__ (self):
-        
         '''
         Trie data structure. 
         '''
@@ -32,11 +22,10 @@ class Trie:
 
     def insert(self, word):
         '''
-        adds a word from the dictonary to the trie. Starts from the first 
-        character in the word. Creates a new nodes as needed. 
+        adds a word from the dictonary to the trie. Starts from the first character in the word. Creates a new nodes as needed. 
         '''      
         node = self.root #starts with ''
-       # print(word)
+        print(word)
         for letter in word: 
             for child in node.children:
                 
@@ -55,13 +44,10 @@ class Trie:
 
 
     def search(self, word):
-        
         '''
-        iterates through each character in the word. If the following character
-        is a child, that becomes the new node.  if you get to the end of the
-        word then and the isEndOfWord == True returns true, else returns false
+        iterates through each character in the word. If the following character is a child, that becomes the new node. 
+        if you get to the end of the word then and the isEndOfWord == True returns true, else returns false
         '''
-        
         node = self.root #starts with ''
         for letter in word: 
             for child in node.children:
@@ -93,10 +79,9 @@ class Trie:
     def getValidWords(self, charstring):
         """
         Returns list of all words in trie containing *only* letters in
-        charstring. Letters can occur 1 or more times. All words must
+        charstring. Letters can occur 0 or more times. All words must
         contains charstring[0] (key).
         """
-        
         def dfs(node, word, includesKey, charstring, wordlist=[]):
             if node.character not in charstring:
                 # Invalid character, so stop building the word
@@ -112,3 +97,11 @@ class Trie:
             return sorted(wordlist,key=len, reverse=True)
 
         return dfs(self.root, "", False, charstring)
+
+
+
+
+
+
+
+    
