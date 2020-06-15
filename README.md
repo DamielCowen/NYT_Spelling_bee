@@ -7,4 +7,4 @@ Beat the New York Time's daily [Spelling Bee game](https://www.nytimes.com/puzzl
 Its as easy as 1,2,3!
 1. Clone the repo
 2. Bee = Pro()
-3. Pro.answers
+3. Bee.answers
