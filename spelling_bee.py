@@ -50,13 +50,7 @@ class Spelling_Bee():
         #remove words that do not contain center letter
         #remove words that are not made up of valid letters
     
-    def _removeShortWords(self):
-# =============================================================================
-#         for word in self.corpus:
-#             if len(word) < 4:
-#                 self.corpus.remove(word)
-# =============================================================================
-        
+    def _removeShortWords(self):        
         self.corpus[:] = [word for word in self.corpus if len(word) >3 ]
         self.corpus_size = len(self.corpus)
         #print('Removed short words. corpus size now {} words'.format(self.corpus_size))
@@ -194,7 +188,7 @@ class method1(Spelling_Bee):
 class method2(Spelling_Bee):
     
     '''
-    iterates through nltk words corpus and saves valid words to list
+    iterates through nltk words corpus and only loads valid words to list
     '''
             
     def __init__(self):
