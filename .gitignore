@@ -1,4 +1,6 @@
 ignore/
+get-pip.py
+geckodriver.log
 
 # Compiled source #
 ###################
